@@ -9,13 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="107.1623mm"
+   height="26.135208mm"
+   viewBox="0 0 107.1623 26.135208"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="Officium.svg">
+   sodipodi:docname="Officium.svg"
+   inkscape:export-filename="/home/cesar/Escritorio/Proyectos/Proyecto Comun/Officium/public/img/Officium.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -27,7 +30,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="2.6615781"
      inkscape:cx="202.51144"
-     inkscape:cy="906.02402"
+     inkscape:cy="49.389371"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -51,7 +54,8 @@
   <g
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-26.535662,-57.619775)">
     <flowRoot
        xml:space="preserve"
        id="flowRoot10"
