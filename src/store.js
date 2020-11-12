@@ -13,8 +13,8 @@ if ( savedProjectsJSON ) {
 	savedProjects = [];
 }
 
-const savedRate = window.localStorage.getItem('currentRate') | 0; // Get currentRate from localStorage or 0 if none.
-
+const savedRateJSON = window.localStorage.getItem('currentRate') | '0'; // Get currentRate from localStorage or 0 if none.
+const savedRate = JSON.parse(savedRateJSON);
 
 /**
  * Declare and export stores.
@@ -22,7 +22,7 @@ const savedRate = window.localStorage.getItem('currentRate') | 0; // Get current
 
 export var currentView = writable('TasksButtonsList');
 
-export var currentRate = writable(0.0);
+export var currentRate = writable(savedRate);
 
 export const projects = writable(savedProjects);
 
@@ -40,7 +40,7 @@ projects.subscribe(
 
 currentRate.subscribe(
 	(currentRate)=>{
-		const currentRateJSON = JSON.stringify(currentRateJSON);
+		const currentRateJSON = JSON.stringify(currentRate);
 		localStorage.setItem('currentRate', currentRateJSON);
 	}
 );
