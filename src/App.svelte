@@ -1,12 +1,17 @@
 <script>
 
-/*	var proyecto;
+  var proyecto;
 	var cliente;
 	var tiempoInvertido;
 	var tarificacionNormal;
-	var horasExtras;
+	var tarificacionExtras;
 	var fechaInicio;
 	var fechaFinal;
+  var tiempoActual;
+  var inicioTarifaNormal;
+  var finTarifaNormal;
+  var precioTarifaNormal;
+  var horaExtra;
 
 function timerOn() {
 	
@@ -18,6 +23,14 @@ function timerOff(){
 
 function pause(){
 
+}
+
+function tarifa(){
+  {#if (inicioTarifaNormal >= tiempoActual <= finTarifaNormal)}
+    (tiempoInvertido*precioTarifaNormal) = tarificacionNormal;
+  {:else}
+    (tiempoInvertido*horaExtra) = tarificacionExtras
+  {/if}
 }
 
 var endpoint = `http://localhost:3000/proyecto/?proyectoBuscado=${proyecto.toUpperCase()}`;
@@ -35,7 +48,7 @@ fetch (endpoint)
         fechaFinal= obj.fechaFinal;
         
     })
-*/
+
 </script>
 
 <main>
