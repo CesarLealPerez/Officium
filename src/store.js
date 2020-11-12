@@ -1,34 +1,46 @@
 import { writable } from 'svelte/store';
 
+/**
+ * Reading localStorage
+ * 
+ * Get projects from browser localStorage or initialize empty array if not.
+ */
+var savedProjects;
+const savedProjectsJSON = window.localStorage.getItem('projects');
+if ( savedProjectsJSON ) {
+	savedProjects = JSON.parse(savedProjectsJSON);
+} else {
+	savedProjects = [];
+}
+
+const savedRate = window.localStorage.getItem('currentRate') | 0; // Get currentRate from localStorage or 0 if none.
+
+
+/**
+ * Declare and export stores.
+ */
+
 export var currentView = writable('TasksButtonsList');
 
 export var currentRate = writable(0.0);
 
-export const projects = writable([]);
+export const projects = writable(savedProjects);
 
-function saveToLocalStorage() {
-    window.localStorage.setItem('projects', projects);
-    window.localStorage.setItem('currentRate', currentRate);
-}
+/**
+ * Update localStorage on stores changes.
+ */
 
-function loadFromStorage() {
-    const savedProjects = window.localStorage.getItem('projects');
-    const savedRate = window.localStorage.getItem('currentRate');
-    projects.set(savedProjects);
-    currentRate.set(savedRate);
-}
+projects.subscribe(
+	(projects)=>{
+		const projectsJSON = JSON.stringify(projects);
+		localStorage.setItem('projects', projectsJSON);
+	}
+);
 
-projects.subscribe(saveToLocalStorage);
 
-function createCount() {
-	const { subscribe, set, update } = writable(0);
-
-	return {
-		subscribe,
-		increment: () => update(n => n + 1),
-		decrement: () => update(n => n - 1),
-		reset: () => set(0)
-	};
-}
-
-export const count = createCount();
+currentRate.subscribe(
+	(currentRate)=>{
+		const currentRateJSON = JSON.stringify(currentRateJSON);
+		localStorage.setItem('currentRate', currentRateJSON);
+	}
+);
