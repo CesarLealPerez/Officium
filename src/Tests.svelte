@@ -12,6 +12,9 @@ var entramenu = false;
 import { currentView, currentRate, projects } from './store.js';
 // Fin prueba Store
 
+// Inicio Prueba Nuevo proyecto
+import NewProject from './NewProject.svelte';
+// Fin prueba Nuevo proyecto
 </script>
 
 <section class="test">
@@ -44,6 +47,10 @@ import { currentView, currentRate, projects } from './store.js';
 <h3>Store end</h3>
 
 <h2> ---- End!! ---- </h2>
+</section>
+
+<section>
+  <NewProject/>
 </section>
 
 <style>
