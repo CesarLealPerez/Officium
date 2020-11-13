@@ -1,12 +1,16 @@
 <script>
 
+  
+// Inicio prueba Menu
 import App from './App.svelte';
 import PanelMenu from './panelMenu.svelte';
 import PanelPrincipal from './panelPrincipal.svelte';
-
-import { currentView, currentRate, projects } from './store.js';
-
 var entramenu = false;
+// Fin prueba Menu
+
+// Inicio prueba Store
+import { currentView, currentRate, projects } from './store.js';
+// Fin prueba Store
 
 </script>
 
@@ -26,6 +30,7 @@ var entramenu = false;
   </div>
 </section>
 
+<section class="test">
 <h2>Store</h2>
 <p>currentView: {$currentView}</p> <button on:click={()=>$currentView="tested"}>test</button>
 <p>currentRate: {$currentRate}</p> <button on:click={()=>$currentRate=9999}>test</button>
@@ -39,6 +44,8 @@ var entramenu = false;
 <h3>Store end</h3>
 
 <h2> ---- End!! ---- </h2>
+</section>
+
 <style>
   section.test {
     border-style: solid;
