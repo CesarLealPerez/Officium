@@ -21,6 +21,8 @@ const savedRate = JSON.parse(savedRateJSON);
  */
 
 export var currentView = writable('TasksButtonsList');
+export var currentTaskStart = writable(null);
+export var currentTaskReference = writable(null);
 
 export var currentRate = writable(savedRate);
 
