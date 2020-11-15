@@ -1,6 +1,6 @@
 <script>
 
-    export var entramenu;
+   // export var entramenu;
 
     function timerOn() {
 	
@@ -66,8 +66,8 @@ fetch (endpoint)
 <main>
 
 	
-	<h1>Officium</h1>
-	<p>Aprovecha tu tiempo</p>
+	<h1>Tasktracker</h1>
+	<p>Tú actividad</p>
 
 
 	<fieldset>

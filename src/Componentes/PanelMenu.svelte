@@ -1,9 +1,9 @@
 <script>
-    import Nuevo from './nuevo.svelte';
-    import CerrarProyecto from './cerrarProyecto.svelte';
-    import Informes from './informes.svelte'; 
-    import Tarifa from './tarifa.svelte'; 
-    import Menu from './menu.svelte';
+    import Nuevo from '../Componentes/Nuevo.svelte';
+    import CerrarProyecto from '../Componentes/CerrarProyecto.svelte';
+    import Informes from '../Paginas/Informes.svelte'; 
+    import Tarifa from '../Componentes/Tarifa.svelte'; 
+    import Menu from '../Componentes/Menu.svelte';
 
     export var entramenu;
 
@@ -15,7 +15,7 @@
 </script>
 
 
-<button on:click={()=>{entramenu=false;}}>Volver</button>
+<button on:click={()=>{entramenu=false}}>Volver</button>
 {#if nuevo} 
     <p>Nuevo</p>  
     <Nuevo bind:nuevo/>     
