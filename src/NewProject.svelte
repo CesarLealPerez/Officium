@@ -10,7 +10,7 @@ var rate;
         const newProject = [
             {
                 name: taskName,
-                proyect: projectName,
+                project: projectName,
                 tags: [],
                 rate: 0.00,
                 time: 0
