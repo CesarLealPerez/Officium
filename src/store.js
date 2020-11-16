@@ -3,15 +3,15 @@ import { writable } from 'svelte/store';
 /**
  * Reading localStorage
  * 
- * Get projects from browser localStorage or initialize empty array if not.
+ * Get task from browser localStorage or initialize empty array if not.
  */
-var savedProjects;
-const savedProjectsJSON = window.localStorage.getItem('projects');
-if ( savedProjectsJSON ) {
-	savedProjects = JSON.parse(savedProjectsJSON);
-} else {
-	savedProjects = [];
-}
+var savedTasks;
+const savedTasksJSON = window.localStorage.getItem('tasks');
+	if ( savedTasksJSON ) {
+		savedTasks = JSON.parse(savedTasksJSON);
+	} else {
+		savedTasks = [];
+	}
 
 const savedRateJSON = window.localStorage.getItem('currentRate') | '0'; // Get currentRate from localStorage or 0 if none.
 const savedRate = JSON.parse(savedRateJSON);
@@ -26,16 +26,16 @@ export var currentTaskReference = writable(null);
 
 export var currentRate = writable(savedRate);
 
-export const projects = writable(savedProjects);
+export const tasks = writable(savedTasks);
 
 /**
  * Update localStorage on stores changes.
  */
 
-projects.subscribe(
-	(projects)=>{
-		const projectsJSON = JSON.stringify(projects);
-		localStorage.setItem('projects', projectsJSON);
+tasks.subscribe(
+	(tasks)=>{
+		const tasksJSON = JSON.stringify(tasks);
+		localStorage.setItem('tasks', tasksJSON);
 	}
 );
 
