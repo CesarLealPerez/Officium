@@ -46,10 +46,14 @@ function cleanInput() {
 <button on:click={goToProjects}>&lt;</button>
 <div class="create-project-container">
 <label id="name">Crea tu proyecto</label>
-    <!--input id="taskName" type="text" placeholder="Nombre la tarea"-->
+    <input id="taskName" type="text" placeholder="Nombre la tarea">
     <input id="projectName" type="text" placeholder="Nombre del proyecto" required bind:value={projectName}>
-    <!--input id="tags" type="text" placeholder="# Etiquetas"-->
-    <!--input id="rate" type="text" placeholder="Tarifa"-->
+    <input id="tags" type="text" placeholder="# Etiquetas">
+    <input id="rate" type="text" placeholder="Tarifa">
+    <select id="rate-select" name="ratelist" form="rateform">
+        <option value="euro">Euro(€)</option>
+        <option value="dolar">Dolar($)</option>
+    </select>
     <button class="create-project-button" on:click={createProject}>Crear</button>
 </div>
 
