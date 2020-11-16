@@ -49,7 +49,7 @@ import NewProject from './NewProject.svelte';
 <h2> ---- End!! ---- </h2>
 </section>
 
-<section>
+<section class="test">
   <NewProject/>
 </section>
 
