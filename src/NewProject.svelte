@@ -7,7 +7,7 @@ var tags;
 var rate;
 
 function createProject() {
-    const tasks = [
+    const newProject = [
         {
             name: taskName,
             proyect: projectName,
@@ -16,7 +16,7 @@ function createProject() {
             time: 0
         }
     ]
-    $projects.push(tasks)
+    $projects.push(newProject)
     cleanInput();
     goToProjects();
 } 
