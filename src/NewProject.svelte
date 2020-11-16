@@ -6,7 +6,7 @@ var projectName= '';
 function createProject() {
     const newProject = {
         name: projectName,
-        task: [],
+        tasks: [],
     }
     $projects.push(newProject)
     cleanInput();
