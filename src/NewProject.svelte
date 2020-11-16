@@ -1,38 +1,32 @@
 <script>
     import { projects, currentView } from './store.js';
     
-var projectName= '';
+var taskName;
+var projectName;
+var tags;
+var rate;
 
 function createProject() {
-    const newProject = {
-        name: projectName,
-        tasks: [],
-    }
-    $projects.push(newProject)
-    cleanInput();
-    goToProjects();
-}
-
-/*function createProject() { 
-    $projects = [
+    const tasks = [
         {
-            name: projectName,
-            rate: float,
-            tasks: [
-                {
-                    start: timestamp,
-                    end: timestamp
-                }
-            ],
-            live: false
+            name: taskName,
+            proyect: projectName,
+            tags: [],
+            rate: 0.00,
+            time: 0
         }
     ]
+    $projects.push(tasks)
     cleanInput();
     goToProjects();
-}*/
+} 
+
 
 function cleanInput() {
-		projectName = '';
+        taskName = '';
+        projectName = '';
+        tags = '';
+        rate = '';
     }
     
 
@@ -43,13 +37,17 @@ function cleanInput() {
 
 </script>
 
-<button on:click={goToProjects}>&lt;</button>
+<svelte:head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</svelte:head>
+
+<button on:click={goToProjects}><i class="fas fa-arrow-left"></i></button>
 <div class="create-project-container">
-<label id="name">Crea tu proyecto</label>
-    <input id="taskName" type="text" placeholder="Nombre la tarea">
-    <input id="projectName" type="text" placeholder="Nombre del proyecto" required bind:value={projectName}>
-    <input id="tags" type="text" placeholder="# Etiquetas">
-    <input id="rate" type="text" placeholder="Tarifa">
+    <label id="name">Crea tu proyecto</label>
+    <input id="taskName" type="text" placeholder="Nombre la tarea" bind:value={taskName}>
+    <input id="projectName" type="text" placeholder="@ Nombre del proyecto" required bind:value={projectName}>
+    <input id="tags" type="text" placeholder="# Etiquetas" bind:value={tags}>
+    <input id="rate" type="text" placeholder="Tarifa" bind:value={rate}>
     <select id="rate-select" name="ratelist" form="rateform">
         <option value="euro">Euro(€)</option>
         <option value="dolar">Dolar($)</option>
