@@ -2,10 +2,10 @@
 
   
 // Inicio prueba Menu
-import App from './App.svelte';
-import PanelMenu from './panelMenu.svelte';
-import PanelPrincipal from './panelPrincipal.svelte';
-var entramenu = false;
+//import App from './App.svelte';
+//import PanelMenu from './panelMenu.svelte';
+//import PanelPrincipal from './panelPrincipal.svelte';
+//var entramenu = false;
 // Fin prueba Menu
 
 // Inicio prueba Store
@@ -18,6 +18,7 @@ import Principal from './drafts/Principal.svelte';
 
 </script>
 
+<!-- 
 <section class="test">
   <h2>Menú</h2>
   <div>  
@@ -33,6 +34,7 @@ import Principal from './drafts/Principal.svelte';
 
   </div>
 </section>
+-->
 
 <section class="test">
   <h2>Store</h2>
@@ -55,7 +57,7 @@ import Principal from './drafts/Principal.svelte';
 </section>
 
 <style>
-  section.test {
+  .test{
     border-style: solid;
     margin: 30px;
     padding: 30px;
