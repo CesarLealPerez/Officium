@@ -9,7 +9,7 @@ var entramenu = false;
 // Fin prueba Menu
 
 // Inicio prueba Store
-import { currentView, currentRate, projects } from './store.js';
+import { currentView, currentRate, tasks } from './store.js';
 // Fin prueba Store
 
 // Inicio Prueba Nuevo proyecto
@@ -38,12 +38,12 @@ import NewProject from './NewProject.svelte';
 <p>currentView: {$currentView}</p> <button on:click={()=>$currentView="tested"}>test</button>
 <p>currentRate: {$currentRate}</p> <button on:click={()=>$currentRate=9999}>test</button>
 <p>projects:</p>
-{#each  $projects as project}
+{#each  $tasks as project}
 <p>{project}</p>
 {:else}
 <p>No hay nada en proyectos...</p>
 {/each}
-<button on:click={()=>{$projects.push('test');$projects=$projects}}>test</button>
+<button on:click={()=>{$tasks.push('test');$tasks=$tasks}}>test</button>
 <h3>Store end</h3>
 
 <h2> ---- End!! ---- </h2>
