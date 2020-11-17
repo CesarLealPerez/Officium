@@ -1,10 +1,16 @@
 
+/* Sidenav */
+
+
 .mdc-list{
     background: #1A1824;
     color: white;
     padding-top: 30vh!important;
 }
 
+.drawer-container{
+    height: 100%!important;
+}
 
 .mdc-drawer__content {
     height: 100%;
@@ -40,4 +46,104 @@
 .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
     -webkit-box-shadow: 0px 0px 0px 0px #1A1824!important;
     box-shadow: 0px 0px 0px 0px #1A1824!important;
+}
+
+/* CardTask */
+
+.smui-card--padded, .smui-card__content, .smui-card__primary-action--padded {
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+/* Card Project */
+
+.cardproject{
+    color:white!important;
+    background-color: #1A1824;
+    border: 0px;
+    display: inline-flex!important;
+    justify-content: space-around!important;
+    align-content: space-around;
+    position: relative;
+    vertical-align: middle!important;
+    width: 100%;
+    font-size: 12px!important;
+  }
+
+.cardTask{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+
+}
+
+.botonPlay{
+    padding: 0px;
+    justify-content: right!important;
+    position: relative;
+    vertical-align: middle!important;
+}
+
+.botonPlayImg{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.cardDatos{
+    text-align: center!important;
+    padding-bottom: 0px!important;
+}
+
+.tareas{
+    padding-left: 0px!important;
+}
+
+.proyectos{
+    padding-left: 0px!important;
+}
+
+.etiquetas{
+    color: yellow;
+    padding: 0px!important;
+    margin: 0px!important;
+}
+
+.txtProyectos{
+    padding: 0px!important;
+    margin: 0px!important;
+}
+
+
+.wrapper{
+    display: block;
+    margin: 0 auto;
+}
+
+.descripcion {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 11px;
+}
+
+.descripcion span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: descripcion 8s linear infinite;
+  padding-top: 17px;
+
+}
+
+@keyframes descripcion {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.tiempoCard{
+    color:#8C8B91;
 }
