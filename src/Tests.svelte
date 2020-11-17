@@ -12,6 +12,7 @@
     projects
   } from './store.js';
   import Card from '@smui/card';
+  import Button, {Label} from '@smui/button';
 
   // Fin prueba Store
 </script>
@@ -99,6 +100,9 @@
    <p>No hay nada en proyectos...</p>
 
    {/each}
+   <nav class="btnCreateTask" style="left: 0px;right: 0px;">
+    <Button style="width:100%" on:click={()=>{$projects.push('test');$projects=$projects}} variant="raised"><Label>AÑADIR PROYECTO</Label></Button>
+   </nav>
 
 </section>
 <!-- 

@@ -147,3 +147,18 @@
 .tiempoCard{
     color:#8C8B91;
 }
+
+.mdc-button--raised{
+    background-color: #34C47C!important;
+}
+
+
+.btnCreateTask{
+    background-color: transparent;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    z-index: 999;
+    margin: 0 auto;
+}
