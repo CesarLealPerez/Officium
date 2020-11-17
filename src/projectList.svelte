@@ -10,11 +10,12 @@
     'NewProject' : NewProject,
     'EditProject' : EditProject,
   }
-
+  
 </script>
 
 <div>
     {#each $tasks as tarea}
+        
         <Project bind:tarea/>
     {:else}
         <p>Empieza por crear un proyecto.</p>
@@ -26,7 +27,7 @@
 <style>
     
     button {
-        
+        position: fixed;
         bottom: 2em;
         left: 2em;
         background-color: darkseagreen;

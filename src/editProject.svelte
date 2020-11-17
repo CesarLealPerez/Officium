@@ -22,17 +22,20 @@
     async function editProject(){
         //aplicamos al elemento html5 el metodo validacion de su contenido
         if(htmlInput.checkValidity()){
-            $tarea1 = [
+            edited = [
                 {
-                    name: $tarea1.name,
                     project: $tarea1.project,
+                    name: $tarea1.name,
                     tags: $tarea1.tags,
                     rate: $tarea1.rate,
                     time: $tarea1.time
                 }
+
+
             ]
             //añadimos el nuevo proyecto al projects del store
-            $tasks.push(editedProject)
+            //$tasks.push($tarea1)
+            //CORREGIR EL PUSH POR UN UPDATE
 
             back();
         }else{
@@ -52,12 +55,14 @@
     <button on:click={back}>Back</button><br>
 
     <!-- input donde metemos el nombre del proyecto y comparte con bind el nombre y el componente entero-->
-    <input required placeholder="Nombre de la tarea..." bind:value={$tarea1.project} bind:this={htmlInput}><br>
+    
     <input required placeholder="Nombre del proyecto..." bind:value={$tarea1.name} bind:this={htmlInput2}><br>
+    <input required placeholder="Nombre de la tarea..." bind:value={$tarea1.project} bind:this={htmlInput}><br>
     <input required placeholder="Nombre de la etiqueta..." bind:value={$tarea1.tags} bind:this={htmlInput3}><br>
     <input required placeholder="Tarifa..." bind:value={$tarea1.rate} bind:this={htmlInput4}><br>
-    <input required placeholder="Tarifa..." bind:value={$tarea1.time} bind:this={htmlInput5}><br>
+    <input required placeholder="Tiempo..." bind:value={$tarea1.time} bind:this={htmlInput5}><br>
 
     <button on:click={editProject}>Guardar</button>
 
+    
 </div>

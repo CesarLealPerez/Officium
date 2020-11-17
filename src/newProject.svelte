@@ -21,8 +21,8 @@
         if(htmlInput.checkValidity()){
             const newProject = [
                 {
-                    name: taskName,
                     project: projectName,
+                    name: taskName, 
                     tags: etiqueta,
                     rate: tarifa,
                     time: time,
@@ -50,8 +50,9 @@
     <button on:click={back}>Back</button><br>
 
     <!-- input donde metemos el nombre del proyecto y comparte con bind el nombre y el componente entero-->
-    <input required placeholder="Nombre de la tarea..." bind:value={taskName} bind:this={htmlInput}><br>
+    
     <input required placeholder="Nombre del proyecto..." bind:value={projectName} bind:this={htmlInput2}><br>
+    <input required placeholder="Nombre de la tarea..." bind:value={taskName} bind:this={htmlInput}><br>
     <input required placeholder="Nombre de la etiqueta..." bind:value={etiqueta} bind:this={htmlInput3}><br>
     <input required placeholder="Nombre de la etiqueta..." bind:value={tarifa} bind:this={htmlInput4}><br>
     <input required placeholder="Tarifa..." bind:value={time} bind:this={htmlInput5}><br>

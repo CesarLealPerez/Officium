@@ -6,7 +6,7 @@ import { writable } from 'svelte/store';
  * Get projects from browser localStorage or initialize empty array if not.
  */
 
-var tarea1 = [];
+var tarea1;
 
 var savedTasks;
 
