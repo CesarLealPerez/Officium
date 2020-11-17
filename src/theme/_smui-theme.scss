@@ -1,0 +1,42 @@
+.mdc-list{
+    background: #1A1824;
+    color: white;
+    padding-top: 30vh!important;
+}
+
+
+.mdc-drawer__content {
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background: #1A1824;
+    color: white;
+}
+
+
+.mdc-drawer .mdc-list-item{
+    padding: 0 38px;
+}
+
+.mdc-list-item__text{
+    opacity: 0.7;
+    font-family: Poppins-Regular;
+    font-size: 12px;
+    color: white;
+    letter-spacing: -0.24px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.mdc-list-item__graphic{
+    margin-right: 12px!important;
+}
+
+.mdc-drawer{
+    border-right: 0px solid #1A1824;
+}
+
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+    -webkit-box-shadow: 0px 0px 0px 0px #1A1824!important;
+    box-shadow: 0px 0px 0px 0px #1A1824!important;
+}
