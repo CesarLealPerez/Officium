@@ -2,10 +2,10 @@
 
   
 // Inicio prueba Menu
-import App from './App.svelte';
-import PanelMenu from './panelMenu.svelte';
-import PanelPrincipal from './panelPrincipal.svelte';
-var entramenu = false;
+//import App from './App.svelte';
+//import PanelMenu from './panelMenu.svelte';
+//import PanelPrincipal from './panelPrincipal.svelte';
+//var entramenu = false;
 // Fin prueba Menu
 
 // Inicio Prueba Nuevo proyecto
@@ -13,6 +13,7 @@ import NewProject from './NewProject.svelte';
 // Fin prueba Nuevo proyecto
 </script>
 
+<!-- 
 <section class="test">
   <h2>Menú</h2>
   <div>  
@@ -28,6 +29,7 @@ import NewProject from './NewProject.svelte';
 
   </div>
 </section>
+-->
 
 <section class="test">
   <h2>NewProject</h2>
@@ -35,7 +37,7 @@ import NewProject from './NewProject.svelte';
 </section>
 
 <style>
-  section.test {
+  .test{
     border-style: solid;
     margin: 30px;
     padding: 30px;
