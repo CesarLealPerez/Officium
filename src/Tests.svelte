@@ -8,14 +8,9 @@ import PanelPrincipal from './panelPrincipal.svelte';
 var entramenu = false;
 // Fin prueba Menu
 
-// Inicio prueba Store
-import { currentView, currentRate, projects } from './store.js';
-// Fin prueba Store
-
-// Inicio pruebas Draft
-import Principal from './drafts/Principal.svelte';
-// Fin prueba Draft
-
+// Inicio Prueba Nuevo proyecto
+import NewProject from './NewProject.svelte';
+// Fin prueba Nuevo proyecto
 </script>
 
 <section class="test">
@@ -35,23 +30,8 @@ import Principal from './drafts/Principal.svelte';
 </section>
 
 <section class="test">
-  <h2>Store</h2>
-  <p>currentView: {$currentView}</p> <button on:click={()=>$currentView="tested"}>test</button>
-  <p>currentRate: {$currentRate}</p> <button on:click={()=>$currentRate=9999}>test</button>
-  <p>projects:</p>
-  {#each  $projects as project}
-  <p>{project}</p>
-  {:else}
-  <p>No hay nada en proyectos...</p>
-  {/each}
-  <button on:click={()=>{$projects.push('test');$projects=$projects}}>test</button>
-  <h3>Store end</h3>
-</section>
-
-<section class="test">
-  <h2>Drafts</h2>
-  <h3>Proyectos:</h3>
-  <Principal/>
+  <h2>NewProject</h2>
+  <NewProject/>
 </section>
 
 <style>
