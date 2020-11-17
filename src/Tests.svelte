@@ -35,7 +35,7 @@
 </section>
 
 -->
-<section style="padding-left: 26px!important;padding-right: 0px!important;">
+<section style="padding-left: 26px!important;padding-right: 26px!important;">
   <h2 class="tittle_PanelProject">TaskTracker</h2>
   <p class="subtit_PanelProject">Tú actividad</p>
 
