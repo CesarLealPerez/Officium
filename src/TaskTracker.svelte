@@ -7,6 +7,7 @@
 </script>
 
 <div>
+    <h2>TaskTracker</h2>
     
     {#each $tasks as item}    
         <Project/>    
