@@ -12,28 +12,11 @@ const views = {
 $currentView = 'NewProject'; // Sets starting component.
 
 </script>
-
-<!-- 
-<section class="test">
-  <h2>Menú</h2>
-  <div>  
-
-    {#if entramenu} 
-        <PanelMenu bind:entramenu/>
-
-    {:else}	
-        <button on:click={()=>{entramenu=true}}>Menu</button>
-        <PanelPrincipal bind:entramenu/>	
-        
-    {/if}	
-
-  </div>
+<main>
+<section id="drafts">
+    <svelte:component this={views[$currentView]}/>
 </section>
--->
-
-<!--<section class="test">
-  <NewProject/>
-</section>-->
+</main>
 
 <style>
   .test{
