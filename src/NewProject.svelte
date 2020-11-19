@@ -1,6 +1,5 @@
 <script>
     import { tasks, currentView } from './store.js';
-currentView = "NewProject";    
 var taskName;
 var projectName;
 var tags;
@@ -21,8 +20,8 @@ function createProject() {
 } 
 
 function comprobar(){
-	if (!taskName && !rate){
-		alert("La tarea debe tener un nombre y una tarifa")
+	if (!taskName || !rate){
+		alert("La tarea debe tener como minimo un nombre y una tarifa")
     }
     else{
         createProject()

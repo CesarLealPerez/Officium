@@ -1,5 +1,5 @@
 <script>
-	import PanelMenu from './panelMenu.svelte';
+	import PanelMenu from './PanelMenu.svelte';
 	import NewProject from './drafts/NewProject.svelte';
     import CerrarProyecto from './cerrarProyecto.svelte';
     import Informes from './informes.svelte'; 

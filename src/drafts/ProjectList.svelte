@@ -1,6 +1,7 @@
 <script>
-        import { projects } from './draftStore.js';
-        import Project from './Project.svelte';
+	import { currentView } from './../store.js';
+    import { projects } from './draftStore.js';
+    import Project from './Project.svelte';
 </script>
 
 <div>

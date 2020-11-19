@@ -1,3 +1,4 @@
+
 <script>
     import { projects, currentView } from './draftStore.js'
 

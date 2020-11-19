@@ -1,18 +1,16 @@
 <script>
-	import ProjectList from './drafts/ProjectList.svelte';
-	import { currentView } from './store.js';
 
-  
-// Inicio prueba Menu
-//import App from './App.svelte';
-//import PanelMenu from './panelMenu.svelte';
-//import PanelPrincipal from './panelPrincipal.svelte';
-//var entramenu = false;
-// Fin prueba Menu
-
-// Inicio Prueba Nuevo proyecto
+import { currentView } from './store.js';
+import ProjectList from './ProjectList.svelte';
 import NewProject from './NewProject.svelte';
-// Fin prueba Nuevo proyecto
+
+const views = {
+  'ProjectList': ProjectList,
+  'NewProject': NewProject,
+}
+
+$currentView = 'NewProject'; // Sets starting component.
+
 </script>
 
 <!-- 
@@ -32,14 +30,11 @@ import NewProject from './NewProject.svelte';
   </div>
 </section>
 -->
-{#if $currentView="NewProject"}
-<section class="test">
+
+<!--<section class="test">
   <NewProject/>
-</section>
-{/if}
-{#if $currentView="ProjectList"}
-<ProjectList/>
-{/if}
+</section>-->
+
 <style>
   .test{
     border-style: solid;
