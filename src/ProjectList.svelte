@@ -5,6 +5,9 @@
     function goToProjects() {
         $currentView = 'NewProject';
 }
+function del(){
+    tasks = [];
+}
 
 </script>
 
@@ -20,5 +23,5 @@
     {/each}
 
     <button on:click={goToProjects}><i class="fas">Crear Tarea</i></button>
-    
+    <button on:click={del}>Borrar</button>
 </div>
