@@ -10,7 +10,7 @@
     <h2>TaskTracker</h2>
     
     {#each $tasks as item}    
-        <Project/>    
+        <Project/> <!--Cambiar por la pagina respectiva-->   
     {:else}
         <NewProject/>
     {/each}
