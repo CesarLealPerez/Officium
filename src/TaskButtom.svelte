@@ -1,6 +1,7 @@
 <script>
+import { projects } from './drafts/draftStore.js';
 
-$ projects = { name: false };
+$projects = { name: false };
 
 async function startTask(){
 
@@ -12,6 +13,8 @@ async function endTask(){
 
 }
 */
+
+
 </script>
 
 <main>
@@ -24,17 +27,13 @@ async function endTask(){
 {/if}
 
 {#if !projects.name}
-
 	<button class="end" on:click={startTask}>
 	    End Task
 	</button>
 {/if}
 
 
-<!--
-<button class="start" on:click={startTask}>Start Task</button>
-<button class="end" on:click={endTask}>End Task</button>
--->
+
 </main>
 <style>
 

@@ -1,9 +1,10 @@
 <script>
-    import Nuevo from './nuevo.svelte';
+	import PanelMenu from './panelMenu.svelte';
+	import NewProject from './drafts/NewProject.svelte';
     import CerrarProyecto from './cerrarProyecto.svelte';
     import Informes from './informes.svelte'; 
     import Tarifa from './tarifa.svelte'; 
-    import Menu from './menu.svelte';
+    
 
     export var entramenu;
 
@@ -18,7 +19,7 @@
 <button on:click={()=>{entramenu=false;}}>Volver</button>
 {#if nuevo} 
     <p>Nuevo</p>  
-    <Nuevo bind:nuevo/>     
+    <NewProject bind:nuevo/>     
 
 {:else if cerrarproyecto}   
     <p>Cerrar Proyecto</p>
@@ -33,7 +34,7 @@
     <Tarifa bind:tarifa/>
 
 {:else if !nuevo&&!cerrarproyecto&&!informes&&!tarifa}
-    <Menu bind:nuevo bind:cerrarproyecto bind:informes bind:tarifa/>  
+    <PanelMenu bind:nuevo bind:cerrarproyecto bind:informes bind:tarifa/>  
 
 {/if}       
 

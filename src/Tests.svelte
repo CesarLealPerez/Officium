@@ -1,4 +1,6 @@
 <script>
+	import ProjectList from './drafts/ProjectList.svelte';
+	import { currentView } from './store.js';
 
   
 // Inicio prueba Menu
@@ -30,12 +32,14 @@ import NewProject from './NewProject.svelte';
   </div>
 </section>
 -->
-
+{#if $currentView="NewProject"}
 <section class="test">
-  <h2>NewProject</h2>
   <NewProject/>
 </section>
-
+{/if}
+{#if $currentView="ProjectList"}
+<ProjectList/>
+{/if}
 <style>
   .test{
     border-style: solid;

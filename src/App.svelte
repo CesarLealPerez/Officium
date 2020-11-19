@@ -1,4 +1,5 @@
 <script>
+	import { currentView } from './drafts/draftStore.js';
   import Tests from './Tests.svelte';
   import Drawer, {AppContent, Content, Scrim} from '@smui/drawer';
   import Button, {Label} from '@smui/button';
@@ -6,7 +7,7 @@
   let myDrawer2;
   let myDrawer2Open = false;
 </script>
-  
+<main>
 <div class="drawer-container">
   <Drawer variant="modal" bind:this={myDrawer2} bind:open={myDrawer2Open}>
     <Content>
@@ -47,7 +48,7 @@
     </main>
   </AppContent>
 </div>
-
+</main>
 
 <style>
   .drawer-container {
