@@ -13,17 +13,17 @@
       <List>
         <Item href="javascript:void(0)">
           <Graphic><img src="img/icon_sign_in_up_green.png" alt="Ajustes"></Graphic>
-          <Text><a style="color:white;font-weight:700" href="#" >Ajustes</a></Text>
+          <Text><a style="color:white;font-weight:700" href >Ajustes</a></Text>
         </Item>
         <Item href="javascript:void(0)">
           <Graphic><img src="img/icon_orders_green.png" alt="Informes"></Graphic>
-          <Text><a style="color:white;font-weight:700" href="#">Informes</a></Text>
+          <Text><a style="color:white;font-weight:700" href>Informes</a></Text>
         </Item>
         <Item href="javascript:void(0)">
           <Graphic><img src="img/icon_settings_green.png" alt="Información"></Graphic>
-          <Text><a style="color:white;font-weight:700" href="#" >Información</a></Text>
+          <Text><a style="color:white;font-weight:700" href>Información</a></Text>
         </Item>
-        <Item style="margin-top:40px" href="javascript:void(0)">
+        <Item style="margin-top:40px" href>
           <Text>Términos & Condiciones</Text>
         </Item>
         <Item href="javascript:void(0)">
