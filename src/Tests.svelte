@@ -11,6 +11,11 @@
 // Inicio Prueba Nuevo proyecto
 import NewProject from './NewProject.svelte';
 // Fin prueba Nuevo proyecto
+
+//Inicio TaskTacker
+import TaskTracker from './TaskTracker.svelte';
+//Fin TaskTacker
+
 </script>
 
 <!-- 
@@ -34,6 +39,11 @@ import NewProject from './NewProject.svelte';
 <section class="test">
   <h2>NewProject</h2>
   <NewProject/>
+</section>
+
+
+<section class="test">
+  <TaskTracker/>
 </section>
 
 <style>

@@ -16,13 +16,14 @@ var rate;
                 time: 0
             }
         ]
-        $tasks.push(newProject)
+        $tasks = $tasks.push(newProject)
         goToProjects();
     } 
 
 
   
     function goToProjects() {
+        console.log('click');
         $currentView = 'ProjectList';
     }
 
