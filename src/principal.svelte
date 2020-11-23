@@ -1,7 +1,7 @@
 <script>
   import { currentView } from './store.js';
     import ProjectList from './projectList.svelte';
-    import NewProject from './newProject.svelte';
+    import NewProject from './NewProject.svelte';
     //import EditProject from './editProjectOpcion1.svelte';
     //import Task from './task.svelte';
     

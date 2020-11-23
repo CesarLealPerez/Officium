@@ -1,4 +1,5 @@
 <script>
+    import {tasks} from './store.js'
 
 let hours = '00';
 var minutes = '00';
@@ -35,6 +36,7 @@ var chronometerCall;
 
     function pauseChronometer() {
         clearInterval(chronometerCall)
+        saveTime()
     };
 
     function resetChronometer() {
@@ -42,6 +44,10 @@ var chronometerCall;
             hours = '00';
             minutes = '00';
             seconds = '00';
+    }
+
+    function saveTime() {
+        chronometerCall = $tasks.time
     }
 </script>
 
