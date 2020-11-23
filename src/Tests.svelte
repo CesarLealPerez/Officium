@@ -9,7 +9,6 @@
 
 // Router
   import {link} from 'svelte-spa-router'
-
   
 // Inicio prueba Menu
 //import App from './App.svelte';
@@ -17,28 +16,19 @@
 //import PanelPrincipal from './panelPrincipal.svelte';
 //var entramenu = false;
 // Fin prueba Menu
-
-// Inicio Prueba Nuevo proyecto
-//import NewProject from './NewProject.svelte';
-// Fin prueba Nuevo proyecto
+  
+  // Inicio Prueba Nuevo proyecto
+  import NewProject from './NewProject.svelte';
+  import Principal from './principal.svelte';
+  // Fin prueba Nuevo proyecto
+  
 </script>
 
-<!-- 
 <section class="test">
-  <h2>Menú</h2>
-  <div>  
-
-    {#if entramenu} 
-        <PanelMenu bind:entramenu/>
-
-    {:else}	
-        <button on:click={()=>{entramenu=true}}>Menu</button>
-        <PanelPrincipal bind:entramenu/>	
-        
-    {/if}	
-
-  </div>
+  <h2>Test Principal</h2>
+  <Principal/>
 </section>
+
 -->
 <section style="padding-left: 26px!important;padding-right: 26px!important;">
   <h2 class="tittle_PanelProject">TaskTracker</h2>
@@ -87,12 +77,11 @@
  <Button style="width:100%" on:click={()=>{$tasks.push('test');$tasks=$tasks}} variant="raised"><Label>AÑADIR PROYECTO</Label></Button>
 </nav>
 
-
 </section>
 
 <!-- 
 <section class="test">
-  <h2>NewProject</h2>
+  <h2>Test NewProject</h2>
   <NewProject/>
 </section>
 -->
