@@ -1,4 +1,8 @@
 <script>
+    import Router from 'svelte-spa-router'
+  import {link} from 'svelte-spa-router'
+  import routes from './routes.js'
+
   import Tests from './Tests.svelte';
   import Drawer, {AppContent, Content, Scrim} from '@smui/drawer';
   import Button, {Label} from '@smui/button';
@@ -47,6 +51,7 @@
     </main>
   </AppContent>
 </div>
+<Router {routes} />
 
 
 <style>
