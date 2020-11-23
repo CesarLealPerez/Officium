@@ -14,7 +14,6 @@
     'ProjectList' : ProjectList,
     'NewProject' : NewProject,
     //'EditProject' : EditProject,
-    'Menu' : Menu,
     //'Task' : Task,
   }
 
