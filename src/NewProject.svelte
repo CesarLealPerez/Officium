@@ -6,6 +6,7 @@ var tags;
 var rate;
 
 function createProject() {
+
     const newProject = [
         {
             name: taskName.toUpperCase(),
@@ -22,6 +23,9 @@ function createProject() {
 function comprobar(){
 	if (!taskName || !rate){
 		alert("La tarea debe tener como minimo un nombre y una tarifa")
+    }
+    if(tasks.find(taskName.toUpperCase()) === true){
+      alert("Ya existe una tarea con ese nombre")
     }
     else{
         createProject()
