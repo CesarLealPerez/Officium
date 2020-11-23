@@ -8,10 +8,13 @@ import PanelPrincipal from './panelPrincipal.svelte';
 var entramenu = false;
 // Fin prueba Menu
 
+<<<<<<< HEAD
 // Inicio prueba Store
 import { currentView, currentRate, tasks } from './store.js';
 // Fin prueba Store
 
+=======
+>>>>>>> e231d158ab0f2da92dbaba104debe0aac50cfcec
 // Inicio Prueba Nuevo proyecto
 import NewProject from './NewProject.svelte';
 // Fin prueba Nuevo proyecto
@@ -36,6 +39,7 @@ import NewProject from './NewProject.svelte';
 </section>
 
 <section class="test">
+<<<<<<< HEAD
 <h2>Store</h2>
 <p>currentView: {$currentView}</p> <button on:click={()=>$currentView="tested"}>test</button>
 <p>currentRate: {$currentRate}</p> <button on:click={()=>$currentRate=9999}>test</button>
@@ -52,6 +56,9 @@ import NewProject from './NewProject.svelte';
 </section>
 
 <section class="test">
+=======
+  <h2>NewProject</h2>
+>>>>>>> e231d158ab0f2da92dbaba104debe0aac50cfcec
   <NewProject/>
 </section>
 
