@@ -26,16 +26,16 @@ export var currentTaskReference = writable(null);
 
 export var currentRate = writable(savedRate);
 
-export const projects = writable(savedProjects);
+export const tasks = writable(savedProjects);
 
 /**
  * Update localStorage on stores changes.
  */
 
-projects.subscribe(
-	(projects)=>{
-		const projectsJSON = JSON.stringify(projects);
-		localStorage.setItem('projects', projectsJSON);
+tasks.subscribe(
+	(tasks)=>{
+		const projectsJSON = JSON.stringify(tasks);
+		localStorage.setItem('tasks', projectsJSON);
 	}
 );
 

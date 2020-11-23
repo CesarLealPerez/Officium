@@ -3,7 +3,7 @@
     
 var taskName;
 var projectName;
-var tags;
+var tags= [];
 var rate;
 
     function createProject() {
@@ -11,8 +11,8 @@ var rate;
             {
                 name: taskName,
                 project: projectName,
-                tags: [],
-                rate: 0.00,
+                tags: tags,
+                rate: rate,
                 time: 0
             }
         ]
@@ -24,6 +24,11 @@ var rate;
   
     function goToProjects() {
         $currentView = 'ProjectList';
+        runChronometer();
+    }
+
+    function runChronometer() {
+        $currentView = 'Chronometer';
     }
 
 

@@ -15,6 +15,8 @@ import { currentView, currentRate, tasks } from './store.js';
 // Inicio Prueba Nuevo proyecto
 import NewProject from './NewProject.svelte';
 // Fin prueba Nuevo proyecto
+
+
 </script>
 
 <section class="test">
@@ -52,6 +54,8 @@ import NewProject from './NewProject.svelte';
 <section class="test">
   <NewProject/>
 </section>
+
+
 
 <style>
   section.test {
