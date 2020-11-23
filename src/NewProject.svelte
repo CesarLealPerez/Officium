@@ -16,7 +16,7 @@ var rate;
                 time: 0
             }
         ]
-        $tasks = $tasks.push(newProject)
+        $tasks = [...$tasks, newProject];
         goToProjects();
     } 
 
