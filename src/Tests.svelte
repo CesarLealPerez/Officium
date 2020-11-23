@@ -1,4 +1,5 @@
 <script>
+<<<<<<< HEAD
 
 import { currentView } from './store.js';
 import ProjectList from './ProjectList.svelte';
@@ -15,6 +16,16 @@ $currentView = 'NewProject'; // Sets starting component.
 <main>
 <section id="drafts">
     <svelte:component this={views[$currentView]}/>
+=======
+<section class="test">
+  <h2>Test Principal</h2>
+  <Principal/>
+</section>
+
+<section class="test">
+  <h2>Test NewProject</h2>
+  <NewProject/>
+>>>>>>> origin/master
 </section>
 </main>
 

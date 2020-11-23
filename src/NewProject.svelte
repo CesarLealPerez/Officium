@@ -39,6 +39,7 @@ function goToProjects() {
 
 </script>
 
+<p>NewProject</p>
 <svelte:head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </svelte:head>
@@ -50,12 +51,15 @@ function goToProjects() {
     <input id="projectName" type="text" placeholder="@ Nombre del proyecto" required bind:value={projectName}><br>
     <input id="tags" type="text" placeholder="# Etiquetas" required bind:value={tags}><br>
     <input id="rate" type="number" placeholder="Tarifa" required bind:value={rate}>
+ 
     <select id="rate-select" name="ratelist" form="rateform">
         <option value="euro">Euro(€)</option>
         <option value="dolar">Dolar($)</option>
     </select><br>
+
     <button class="create-project-button" on:click={comprobar}><i class="fas">Crear</i></button><br>
     <button on:click={goToProjects}><i class="fas fa-arrow-left">Volver a lista de tareas</i></button>
+
 </div>
 
 <style>
