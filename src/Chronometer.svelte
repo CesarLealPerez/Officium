@@ -47,7 +47,7 @@ var chronometerCall;
     }
 
     function saveTime() {
-        chronometerCall = $tasks.time
+        $tasks.time = chronometerCall
     }
 </script>
 
