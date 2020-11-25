@@ -55,3 +55,4 @@ currentRate.subscribe(
 		localStorage.setItem('currentRate', currentRateJSON);
 	}
 );
+ 
