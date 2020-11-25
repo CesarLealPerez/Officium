@@ -1,6 +1,7 @@
 <script>
     import {tasks} from './store.js'
 
+
 let hours = '00';
 var minutes = '00';
 var seconds = '00';
@@ -30,6 +31,7 @@ var chronometerCall;
     };
 
     function playChronometer() {
+        clearInterval(chronometerCall)
         chronometerCall = setInterval(chronometer, 1000);
     };
     playChronometer();
@@ -47,7 +49,13 @@ var chronometerCall;
     }
 
     function saveTime() {
-        $tasks.time = chronometerCall
+
+        const totaltime = {
+            hours,
+            minutes,
+            seconds,
+        }
+        $tasks.time = totaltime
     }
 </script>
 
