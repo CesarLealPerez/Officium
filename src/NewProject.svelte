@@ -5,7 +5,21 @@ var projectName;
 var tags;
 var rate;
 
-function createProject() {
+
+    function createProject() {
+        const newProject = [
+            {
+                name: taskName,
+                project: projectName,
+                tags: [],
+                rate: 0.00,
+                time: 0
+            }
+        ]
+        $tasks = [...$tasks, newProject];
+        goToProjects();
+    } 
+
 
     const newProject = [
         {
@@ -32,7 +46,11 @@ function comprobar(){
     }
 }
   
-function goToProjects() {
+
+
+    function goToProjects() {
+        console.log('click');
+
         $currentView = 'ProjectList';
 }
 
