@@ -26,7 +26,11 @@ export var currentTaskReference = writable(null);
 
 export var currentRate = writable(savedRate);
 
+<<<<<<< HEAD
+export const tasks = writable(savedProjects);
+=======
 export const tasks = writable(savedTasks);
+>>>>>>> e231d158ab0f2da92dbaba104debe0aac50cfcec
 
 /**
  * Update localStorage on stores changes.
@@ -34,8 +38,13 @@ export const tasks = writable(savedTasks);
 
 tasks.subscribe(
 	(tasks)=>{
+<<<<<<< HEAD
+		const projectsJSON = JSON.stringify(tasks);
+		localStorage.setItem('tasks', projectsJSON);
+=======
 		const tasksJSON = JSON.stringify(tasks);
 		localStorage.setItem('tasks', tasksJSON);
+>>>>>>> e231d158ab0f2da92dbaba104debe0aac50cfcec
 	}
 );
 

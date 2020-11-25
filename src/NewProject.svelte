@@ -2,7 +2,7 @@
     import { tasks, currentView } from './store.js';
 var taskName;
 var projectName;
-var tags;
+var tags= [];
 var rate;
 
 
@@ -11,28 +11,15 @@ var rate;
             {
                 name: taskName,
                 project: projectName,
-                tags: [],
-                rate: 0.00,
-                time: 0,
+                tags: tags,
+                rate: rate,
+                time: 0
+
             }
         ]
         $tasks = [...$tasks, newProject];
         goToProjects();
     } 
-
-
-    const newProject = [
-        {
-            name: taskName.toUpperCase(),
-            project: projectName,
-            tags: [],
-            rate: 0.00,
-            time: 0
-        }
-    ]
-    $tasks.push(newProject)
-    goToProjects();
-} 
 
 function comprobar(){
 	if (!taskName || !rate){
@@ -49,11 +36,9 @@ function comprobar(){
 
 
     function goToProjects() {
-        console.log('click');
-
         $currentView = 'ProjectList';
-}
 
+    }
 
 </script>
 
