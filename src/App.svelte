@@ -48,7 +48,6 @@
   </AppContent>
 </div>
 
-
 <style>
   .drawer-container {
     position: relative;
