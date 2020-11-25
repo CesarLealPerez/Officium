@@ -13,7 +13,7 @@ var rate;
                 project: projectName,
                 tags: [],
                 rate: 0.00,
-                time: 0
+                time: 0,
             }
         ]
         $tasks = [...$tasks, newProject];
