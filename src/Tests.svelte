@@ -10,6 +10,9 @@
   
   // Inicio Prueba Nuevo proyecto
   import NewProject from './NewProject.svelte';
+  import Principal from './principal.svelte';
+  import Chronometer from './Chronometer.svelte';
+
   // Fin prueba Nuevo proyecto
   
 
@@ -72,6 +75,11 @@ import Principal from './principal.svelte';
 </section>
 
 
+
+<section class="test">
+  <h2>Test Chronometer</h2>
+  <Chronometer/>
+</section>
 
 <style>
   .test{
