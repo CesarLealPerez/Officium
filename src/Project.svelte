@@ -6,9 +6,9 @@
 </script>
 <!-- 
 <button>
-    Prueba
-    <p>{item.name}</p>
-    <p><button on:click=""></button></p>
+    *item.prueba*
+    <!--p>{item.name}</p-->
+    <p><button on:click="">Boton play</button></p>
 </button>
 -->
 
