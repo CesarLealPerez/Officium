@@ -1,6 +1,6 @@
 <script>
-    import { currentView } from './store.js';
-      import ProjectList from './projectList.svelte';
+    import { currentView } from './Store.js';
+      import ProjectList from './ProjectList.svelte';
       import NewProject from './NewProject.svelte';
       //import EditProject from './editProjectOpcion1.svelte';
       //import Task from './task.svelte';
@@ -9,7 +9,7 @@
       $currentView = 'NewProject';
     }
 
-    import { tasks } from './store.js';
+  import { tasks } from './Store.js';
   import Card from '@smui/card';
   import Button, {Label} from '@smui/button';
 

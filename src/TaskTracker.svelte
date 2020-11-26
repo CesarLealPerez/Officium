@@ -1,5 +1,5 @@
 <script>
-    import { tasks } from './store.js';
+    import { tasks } from './Store.js';
     import Project from './Project.svelte';
     import NewProject from './NewProject.svelte';
     console.log($tasks)

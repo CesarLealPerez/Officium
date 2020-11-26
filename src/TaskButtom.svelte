@@ -1,6 +1,6 @@
 <script>
 
-$ projects = { name: false };
+$Projects = { name: false };
 
 async function startTask(){
 

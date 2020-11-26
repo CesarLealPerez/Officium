@@ -10,7 +10,7 @@
   
   // Inicio Prueba Nuevo proyecto
   import NewProject from './NewProject.svelte';
-  import Principal from './principal.svelte';
+  import Principal from './Principal.svelte';
   import Chronometer from './Chronometer.svelte';
 
   // Fin prueba Nuevo proyecto
@@ -19,12 +19,12 @@
 
 
 // Inicio prueba Store
-import { currentView, currentRate, tasks } from './store.js';
+import { currentView, currentRate, tasks } from './Store.js';
 // Fin prueba Store
 
 
 // Inicio Prueba Nuevo proyecto
-import NewProject from './NewProject.svelte';
+//import NewProject from './NewProject.svelte';
 // Fin prueba Nuevo proyecto
 
 
@@ -34,7 +34,7 @@ import TaskTracker from './TaskTracker.svelte';
 //Fin TaskTacker
 
 //Inicio Principal
-import Principal from './principal.svelte';
+//import Principal from './Principal.svelte';
 //Fin Principal
   
 </script>

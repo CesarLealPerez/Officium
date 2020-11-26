@@ -1,5 +1,5 @@
 <script>
-    import {tasks} from './store.js'
+    import {tasks} from './Store.js'
 
 
 let hours = '00';

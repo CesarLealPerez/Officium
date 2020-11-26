@@ -1,0 +1,46 @@
+Los Archivos de Svelte, comenzaran por mayúscula, si es nombre compuesto, Ambas con mayúscula ejemplos:
+(exceptuando main.js o archivos predeterminados de svelte)
+
+			Svelte.svelte------------ SvelteProject.svelte
+
+	main.js
+	NewProject.svelte
+	App.svelte
+	Chonometer.svelte
+	Principal.svelte
+	Project.svelte
+	ProjectList.svelte
+	SaveCloseTask.js
+	Store.js
+	TaskButtom.svelte
+	TaskTracker.svelte
+	Test.svelte
+	
+	
+
+
+Variables en Store.js:
+
+	-Empiezan con minúscula y si es compuesta la segunda con mayúscula.
+	var savedTasks;
+	const savedRateJSON;
+	const savedRate;
+	var currentView;
+	var currentTaskStart;
+	var currentTaskReference;
+	var currentRate;
+	const tasks;
+
+
+variables NewProject.svelte:
+
+	-Empiezan con minúscula y si es compuesta la segunda con mayúscula.
+	var taskName;
+	var projectName;
+	var tags= [];
+	var rate;
+
+Variables Project.svelte:
+
+	Expor var item
+
