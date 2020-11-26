@@ -7,10 +7,9 @@
 <!-- 
 <button>
     *item.prueba*
-    <!--p>{item.name}</p-->
+    <p>{item.name}</p-->
     <p><button on:click="">Boton play</button></p>
-</button>
--->
+
 
 <style>
     /*

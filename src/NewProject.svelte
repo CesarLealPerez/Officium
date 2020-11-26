@@ -1,5 +1,5 @@
 <script>
-    import { tasks, currentView } from './store.js';
+    import { tasks, currentView } from './Store.js';
 var taskName;
 var projectName;
 var tags= [];
