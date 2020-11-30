@@ -69,5 +69,5 @@
 
 </section>
 
-<p>ProjectList</p>
-<button class="create-project-button" on:click={newProject}>Añadir Proyecto</button>
+<!--p>ProjectList</p>
+<button class="create-project-button" on:click={newProject}>Añadir Proyecto</button-->
