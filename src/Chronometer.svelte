@@ -37,7 +37,7 @@ var play = false;
             clearInterval(chronometerCall)
             chronometerCall = setInterval(chronometer, 1000);}
     };
-    playChronometer();
+    /*playChronometer();*/
 
     function pauseChronometer() {
         play = false;
@@ -82,7 +82,7 @@ var play = false;
 .chrono {
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 5px;
 }
 
 .controls {
@@ -91,10 +91,10 @@ var play = false;
 }
 
 #play, #pause {
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
 #play, #pause, #reset {
-    font-size: 15px;
+    font-size: 5px;
 }
 </style>
