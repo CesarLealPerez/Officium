@@ -6,6 +6,7 @@ let hours = '00';
 var minutes = '00';
 var seconds = '00';
 var chronometerCall;
+var play = false;
 
     
     function chronometer() {
@@ -31,12 +32,15 @@ var chronometerCall;
     };
 
     function playChronometer() {
-        clearInterval(chronometerCall)
-        chronometerCall = setInterval(chronometer, 1000);
+        if (play == false){
+            play = true;
+            clearInterval(chronometerCall)
+            chronometerCall = setInterval(chronometer, 1000);}
     };
     playChronometer();
 
     function pauseChronometer() {
+        play = false;
         clearInterval(chronometerCall)
         saveTime()
     };
