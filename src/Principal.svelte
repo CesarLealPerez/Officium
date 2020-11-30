@@ -22,7 +22,7 @@
 
 </script>
 
-<section id="drafts">
+<section id="drafts">  
   <svelte:component this={views[$currentView]}/>
 </section>
 
