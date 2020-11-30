@@ -1,5 +1,5 @@
 <script>
-  import Tests from './Tests.svelte';
+  import Tests from './Principal.svelte';
   import Drawer, {AppContent, Content, Scrim} from '@smui/drawer';
   import Button, {Label} from '@smui/button';
   import List, {Item, Text, Graphic} from '@smui/list';

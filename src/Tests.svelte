@@ -30,7 +30,7 @@ import { currentView, currentRate, tasks } from './Store.js';
 
 
 //Inicio TaskTacker
-import TaskTracker from './TaskTracker.svelte';
+//import TaskTracker from './TaskTracker.svelte';
 //Fin TaskTacker
 
 //Inicio Principal
@@ -70,9 +70,9 @@ import TaskTracker from './TaskTracker.svelte';
 
 
 
-<section class="test">
+<!--section class="test">
   <TaskTracker/>
-</section>
+</section-->
 
 
 
