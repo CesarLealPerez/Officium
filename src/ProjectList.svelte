@@ -64,7 +64,7 @@
 -->
 
 <nav class="btnCreateTask" style="left: 0px;right: 0px;">
-  <Button style="width:100%" on:click={()=>{newProject}} variant="raised"><Label>AÑADIR PROYECTO</Label></Button>
+  <Button style="width:100%" on:click={newProject} variant="raised"><Label>AÑADIR PROYECTO</Label></Button>
 </nav>
 
 </section>
