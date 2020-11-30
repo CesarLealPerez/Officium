@@ -1,7 +1,9 @@
 <script>
     import { currentView } from './Store.js';
-      import ProjectList from './ProjectList.svelte';
-      import NewProject from './NewProject.svelte';
+    import ProjectList from './ProjectList.svelte';
+    import NewProject from './NewProject.svelte';
+    import Chronometer from './Chronometer.svelte';
+    
       //import EditProject from './editProjectOpcion1.svelte';
       //import Task from './task.svelte';
 
@@ -32,7 +34,7 @@
      <div class="col s6 cardTask">
        <div class="col s12 tareas wrapper">
          <p class="descripcion">
-           <span>Landing para CocaCola.</span>
+           <span>{tasks.name}</span>
          </p>
        </div>
        <div class="col s12 proyectos">
@@ -45,7 +47,7 @@
          <p>€58.00</p>
        </div>
        <div class="col s12">
-         <p class="tiempoCard">00:48:21</p>
+         <p class="tiempoCard"><Chronometer/></p>
        </div>
      </div>
      <div class="col s2 botonPlay">         
@@ -69,5 +71,3 @@
 
 </section>
 
-<!--p>ProjectList</p>
-<button class="create-project-button" on:click={newProject}>Añadir Proyecto</button-->
