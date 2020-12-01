@@ -61,6 +61,14 @@ var play = false;
         }
         $tasks.time = totaltime
     }
+function pulse(){
+    if (play === false){
+        playChronometer()
+    }else{
+        pauseChronometer()
+    }
+}
+
 </script>
 
 <svelte:head>
@@ -68,7 +76,7 @@ var play = false;
 </svelte:head>
 <!--Cronometro-->
 <div class="chrono">
-    <h1 data-chronometer>{hours}:{minutes}:{seconds}</h1>
+    <h1 on:click={pulse} data-chronometer>{hours}:{minutes}:{seconds}</h1>
 </div>
     <div class="controls">
         <span id="play" on:click = {playChronometer}><i class="fas fa-play"></i></span>
