@@ -36,12 +36,12 @@
      <div class="col s6 cardTask">
        <div class="col s12 tareas wrapper">
          <p class="descripcion">
-           <span>{tasks.name}</span>
+           <span>{task.name}</span>
          </p>
        </div>
        <div class="col s12 proyectos">
-         <p class="etiquetas">#Desarrollo web</p>
-         <p class="txtProyectos">@CocaCola</p>
+         <p class="etiquetas">{task.tags}</p>
+         <p class="txtProyectos">{task.project}</p>
        </div>
      </div>
      <div class="col s4 cardDatos">
