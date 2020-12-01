@@ -7,7 +7,7 @@ var rate;
 
 
     function createProject() {
-        const newProject = [
+        const newProject = 
             {
                 name: taskName,
                 project: projectName,
@@ -16,7 +16,7 @@ var rate;
                 time: 0
 
             }
-        ]
+        
         $tasks = [...$tasks, newProject];
         goToProjects();
     } 

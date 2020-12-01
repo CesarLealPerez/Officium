@@ -1,6 +1,6 @@
 <script>
     import { currentView } from './Store.js';
-    import ProjectList from './ProjectList.svelte';
+    /*import ProjectList from './ProjectList.svelte';*/
     import NewProject from './NewProject.svelte';
     import Chronometer from './Chronometer.svelte';
     
@@ -25,6 +25,8 @@
   <div class="card-container short">
 
 </div>
+<!--Boton para limpiar LocalStorage-->
+<button on:click="{()=>{localStorage.clear()}}">Limpiar</button>
 
 {#each $tasks as task}
   <div class="card-container short">
@@ -34,25 +36,25 @@
      <div class="col s6 cardTask">
        <div class="col s12 tareas wrapper">
          <p class="descripcion">
-           <span>{tasks.name}</span>
+           <span>{task.name}</span>
          </p>
        </div>
        <div class="col s12 proyectos">
-         <p class="etiquetas">#Desarrollo web</p>
-         <p class="txtProyectos">@CocaCola</p>
+         <p class="etiquetas">{task.tags}</p>
+         <p class="txtProyectos">{task.project}</p>
        </div>
      </div>
      <div class="col s4 cardDatos">
        <div class="col s12">
-         <p>€58.00</p>
+         <p>{task.rate}</p>
        </div>
        <div class="col s12">
          <p class="tiempoCard"><Chronometer/></p>
        </div>
      </div>
-     <div class="col s2 botonPlay">         
+     <!--div class="col s2 botonPlay">         
        <a href="#"><img class="botonPlayImg" src="img/icon_small_arrow_right.png" alt="BotonPlay"></a>
-     </div>
+     </div-->
    </div>
    </Card>
   </div>
