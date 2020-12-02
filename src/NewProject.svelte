@@ -1,5 +1,9 @@
 <script>
     import { tasks, currentView } from './Store.js';
+
+    import Button, {Label} from '@smui/button';
+
+
 var taskName;
 var projectName;
 var tags= [];
@@ -59,13 +63,13 @@ function comprobar(){
             <option value="dolar">Dolar($)</option>
         </select><br>
     
-        <div class="botones-crear">
+        <div class="botones-crear center">
             <div class="row">
-                <div class="col s6 left">
-                    <button class="volver" on:click={goToProjects}>VOLVER A LISTA DE TAREAS</button>
+                <div class="col s6" style="padding-left: 0px!important">
+                    <Button class="volver" on:click={goToProjects}><Label class="white-text">VOLVER</Label></Button>
                 </div>
-                <div class="col s6 right">
-                    <button class="create-project-button" on:click={comprobar}>CREAR PROYECTO</button><br>
+                <div class="col s6">
+                    <Button class="create-project-button" on:click={comprobar}><Label class="white-text">CREAR</Label></Button><br>
                 </div>
             </div>
         </div>
