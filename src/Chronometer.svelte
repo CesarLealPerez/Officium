@@ -76,7 +76,7 @@ function pulse(){
 </svelte:head>
 <!--Cronometro-->
 <div class="chrono">
-    <h1 on:click={pulse} on:dblclick={resetChronometer} data-chronometer>{hours}:{minutes}:{seconds}</h1>
+    <p on:click={pulse} on:dblclick={resetChronometer} data-chronometer>{hours}:{minutes}:{seconds}</p>
 </div>
     <div class="controls">
         <span id="play" on:click = {playChronometer}><i class="fas fa-play"></i></span>

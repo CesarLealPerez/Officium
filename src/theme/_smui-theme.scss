@@ -177,3 +177,39 @@
     font-size: 15px!important;
   }
 
+  /* Crear proyecto */
+
+.botones-crear{
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+
+.create-project-container h2{
+    font-size: 23px!important;
+}
+
+.create-project-button{
+    background-color: #34C47C!important;
+    color: white;
+    text-align: center;
+    border: 0px;
+    margin-top: 20px;
+    font-size: 4vw;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+}
+
+.volver{
+    background-color: #34C47C!important;
+    color: white;
+    text-align: center;
+    border: 0px;
+    font-size: 4vw;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+}

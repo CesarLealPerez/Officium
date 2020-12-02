@@ -52,9 +52,9 @@
          <p class="tiempoCard"><Chronometer/></p>
        </div>
      </div>
-     <!--div class="col s2 botonPlay">         
-       <a href="#"><img class="botonPlayImg" src="img/icon_small_arrow_right.png" alt="BotonPlay"></a>
-     </div-->
+     <div class="col s2 botonPlay">         
+       <a ><img class="botonPlayImg" src="img/icon_small_arrow_right.png" alt="BotonPlay"></a>
+    </div>
    </div>
    </Card>
   </div>
