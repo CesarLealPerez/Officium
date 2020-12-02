@@ -182,6 +182,8 @@
 .botones-crear{
     display: inline-flex;
     vertical-align: middle;
+    padding-right: 0px!important;
+    padding-left: 0px!important;
 }
 
 
@@ -195,11 +197,11 @@
     text-align: center;
     border: 0px;
     margin-top: 20px;
-    font-size: 4vw;
-    margin-top: 20px;
+    margin-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 4px;
+    width: 35vw;
 }
 
 .volver{
@@ -207,9 +209,10 @@
     color: white;
     text-align: center;
     border: 0px;
-    font-size: 4vw;
     margin-top: 20px;
+    margin-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 4px;
+    width: 35vw;
 }
