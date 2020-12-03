@@ -1,3 +1,4 @@
+
 <script>
   import Tests from './Principal.svelte';
   import Drawer, {AppContent, Content, Scrim} from '@smui/drawer';
@@ -21,7 +22,7 @@
         </Item>
         <Item href="javascript:void(0)">
           <Graphic><img src="img/icon_settings_green.png" alt="Información"></Graphic>
-          <Text><a style="color:white;font-weight:700" href="#" >Información</a></Text>
+          <Text><a style="color:white;font-weight:700" href="./img/AvisoLegal.pdf" target="_blank">Información</a></Text>
         </Item>
         <Item style="margin-top:40px" href="javascript:void(0)">
           <Text>Términos & Condiciones</Text>
