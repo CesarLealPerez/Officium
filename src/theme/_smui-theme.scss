@@ -177,6 +177,11 @@
     font-size: 15px!important;
   }
 
+.task_rate_text{
+    font-size: 18px;
+    padding-top: 10px;
+}
+
   /* Crear proyecto */
 
 .botones-crear{
@@ -215,4 +220,22 @@
     padding-bottom: 10px;
     border-radius: 4px;
     width: 35vw;
+}
+
+/* Cronometro */
+
+.chrono-text{
+    font-size: 15px;
+    margin-top: 0px!important;
+}
+
+.boton-chrono{
+    background: transparent;
+    border: 0px;
+    color: grey;
+    padding-top: 10px;
+}
+
+.task_rate_text{
+    margin-bottom: 0px;
 }

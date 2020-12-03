@@ -68,7 +68,7 @@ function pulse(){
         pauseChronometer()
     }
 }
-
+    
 </script>
 
 <svelte:head>
@@ -76,8 +76,10 @@ function pulse(){
 </svelte:head>
 <!--Cronometro-->
 <div class="chrono">
-    <p on:click={pulse} on:dblclick={resetChronometer} data-chronometer>{hours}:{minutes}:{seconds}</p>
+    <p class="chrono-text" on:click={pulse} on:dblclick={resetChronometer} data-chronometer>{hours}:{minutes}:{seconds}</p>
 </div>
+
+<!-- 
     <div class="controls">
         <span id="play" on:click = {playChronometer}><i class="fas fa-play"></i></span>
 
@@ -85,12 +87,14 @@ function pulse(){
 
         <span id="reset" on:click = {resetChronometer}><i class="fas fa-undo-alt"></i></span>
     </div>
+-->
 
 <style>
 .chrono {
     display: flex;
     justify-content: center;
-    font-size: 5px;
+    font-size: 10px;
+    padding-top: 10px;
 }
 
 .controls {
@@ -105,4 +109,5 @@ function pulse(){
 #play, #pause, #reset {
     font-size: 5px;
 }
+
 </style>
