@@ -20,17 +20,11 @@
           <Graphic><img src="img/icon_orders_green.png" alt="Informes"></Graphic>
           <Text><a style="color:white;font-weight:700" href="#">Informes</a></Text>
         </Item>
-        <Item href="javascript:void(0)">
+        <Item href="../img/AvisoLegal.pdf" target="_blank">
           <Graphic><img src="img/icon_settings_green.png" alt="Información"></Graphic>
-          <Text><a style="color:white;font-weight:700" href="./img/AvisoLegal.pdf" target="_blank">Información</a></Text>
+          <Text><a style="color:white;font-weight:700" href="#" >Información</a></Text>
         </Item>
-        <Item style="margin-top:40px" href="javascript:void(0)">
-          <Text>Términos & Condiciones</Text>
-        </Item>
-        <Item href="javascript:void(0)">
-          <Text>Politica de privacidad</Text>
-        </Item>
-        <Item href="javascript:void(0)" >
+        <Item href="mailto:cursoaplicacionsweb@gmail.com?Subject=Peticion%20de%20ayuda%20y%20soporte" >
           <Text>Faq & Soporte</Text>
         </Item>
       </List>
