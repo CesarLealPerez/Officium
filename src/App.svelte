@@ -21,11 +21,14 @@
           <Text><a style="color:white;font-weight:700" href="#">Informes</a></Text>
         </Item>
         <Item href="../img/AvisoLegal.pdf" target="_blank">
-          <Graphic><img src="img/icon_settings_green.png" alt="Información"></Graphic>
+          <Graphic><img src="img/icon_settings_green.png" alt="Información Legal"></Graphic>
           <Text><a style="color:white;font-weight:700" href="#" >Información</a></Text>
         </Item>
+        <Item href="../img/Faq.pdf" alt="Faq" >
+          <Text>Faq</Text>
+        </Item>
         <Item href="mailto:cursoaplicacionsweb@gmail.com?Subject=Peticion%20de%20ayuda%20y%20soporte" >
-          <Text>Faq & Soporte</Text>
+          <Text>Soporte</Text>
         </Item>
       </List>
     </Content>
